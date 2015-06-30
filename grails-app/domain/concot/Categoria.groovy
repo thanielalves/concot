@@ -2,7 +2,7 @@ package concot
 
 class Categoria {
 
-    //Teste de modificação
+    //Teste de modificação 2
     String nome
     
     static hasMany = [itens:Item]
