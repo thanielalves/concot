@@ -6,6 +6,10 @@ class Cotacao {
     
     Date data
     
+    String toString() {
+        this.valor
+    }
+    
     static belongsTo = [item:Item, moeda:Moeda, fornecedor:Fornecedor]
     
     static constraints = {
