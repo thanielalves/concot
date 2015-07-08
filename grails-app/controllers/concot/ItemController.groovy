@@ -28,6 +28,11 @@ class ItemController {
 		response.outputStream << item.imagem
 	}
 
+    def busca() {
+        def itens = Item.findAllByNomeLike("%${params['nome']}%")
+        render(template:'resultado', model:[itens:itens])
+    }
+
     @Transactional
     def save(Item itemInstance) {
         if (itemInstance == null) {

@@ -47,6 +47,10 @@
 					
 				</li>
 				</g:if>
+
+				<concot:imagem item="${item}">
+					<p>Item sem imagem</p>
+				</concot:imagem>
 			
 			</ol>
 			<g:form url="[resource:itemInstance, action:'delete']" method="DELETE">

@@ -2,7 +2,7 @@ package concot
 
 class AutenticacaoController {
 
-	static allowedMethods = [autenticar:'POST']
+	static allowedMethods = [autenticar:'POST']	
 
     def autenticar(Usuario usuario) {
 		def registro = Usuario.findByLoginAndSenha(usuario.login, usuario.senha)
